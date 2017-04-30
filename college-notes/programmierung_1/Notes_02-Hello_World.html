@@ -38,9 +38,49 @@ int main()
     return 0;
 }
 </code></pre>
+<h3>White Space</h3>
+<pre><code>#include&lt;iostream&gt;
+using namespace std;int main() {cout &lt;&lt;
+&quot;Hello World!\n&quot;;return 0;}
+</code></pre>
+<p>White space refers to extra spaces and line breaks. These are ignored by the compiler so the code above will compile exactly the same as the code written at the top. However doing this will make your code really hard to read, so it's highly recommended to keep to style conventions. This will make your code way easier to read and edit in the future. Style matters!</p>
 <h3>cout</h3>
 <p>cout is short for &quot;character out&quot; and represents the standard output stream. When you type cout you follow it with &lt;&lt; and then with the content to be sent to the standard output stream. If this content isn't a variable and you want to send some text as shown in the Hello World program, then you surround it with quotes. These quotes are not included in the output stream. The \n at the end refers to a newline.</p>
 <pre><code>cout &lt;&lt; &quot;Hello World!\n&quot;;
 </code></pre>
+<h2>COMPILING C++</h2>
+<p>Before you can use your C++ program, you need to compile it. This is fairly simply done on the Mac and Linux command lines with the following command:</p>
+<pre><code>g++ hello_world.cpp -o hello_world
+</code></pre>
+<p>Here the file name ending in .cpp is the source code to be converted into machine-readable code, and the file name typed after the -o flag is the name the compiled program will be given.</p>
+<p>An important thing to note here are the naming conventions used with the various files.</p>
+<p>hello_world.cpp - C++ Source Code (also .cc or on Linux .C is occasionally used)<br />
+hello_world.c - C Source Code<br />
+hello_world.o - Compiled but un linked code, also known as an object file<br />
+hello_world.h - A header file (also occasionally .hh or .hpp)<br />
+hello_world - An executable file</p>
+<p>Avoid using spaces or special characters in your life names to save a lot of stress!</p>
+<h2>ERRORS</h2>
+<p>There are three types of errors:</p>
+<ol>
+<li>Compile time errors</li>
+<li>Link time errors</li>
+<li>Run time errors</li>
+</ol>
+<p><em>Compile time errors</em> have two types. The first are shown in the compiler as warnings. These are syntactically accurate and will compile, but the compiler has noticed something that is likely to be a mistake. A common example of this is mixing up = and == in an if statement. The second are showin the compiler as errors. This mean that the code is not syntactically correct and thus won't compile.</p>
+<p><em>Link time errors</em> are similar to compile time errors but occur while linking files.</p>
+<p><em>Run time errors</em> are the most complicated. These are often the hardest to find as the compiler can't warn you. This is usually because there is a problem in the logic of the code, so even though the code is syntactically correct, the results are not what you wanted. Another common source of run time errors come through unforeseen circumstances such as incorrect user input. Defensive programming can often be a good way to avoid these errors from the get go.</p>
+<p>Don't forget to test your programs thoroughly!!!</p>
+<h2>REVISION</h2>
+<p><strong>Include libraries</strong> - #include &lt;iostream&gt; / using namespace std;<br />
+<strong>Comments</strong> - for documentation /* */ //<br />
+<strong>Function</strong> - int main();<br />
+<strong>main()</strong> - Called at the launch of the program<br />
+<strong>Translate and Link</strong> - g++ x.cpp -o x<br />
+<strong>Start Program</strong> - ./x<br />
+<strong>Naming Conventions</strong> - x.cpp x.h x.o x<br />
+<strong>Error Categories</strong> - compile time, link time, run time<br />
+<strong>Testing</strong> - No proof of correctness but indispensible<br />
+<strong>Style matters</strong> - Readability and maintainability</p>
 <hr />
 <p><a href="Notes_01-Foundations.html">Previous</a> <a href="programmierung_1.html">Contents</a> <a href="http://www.placeholder.com">Next</a></p>
