@@ -1,0 +1,46 @@
+<h1>2. &quot;Hello World&quot;</h1>
+<hr />
+<h2>SOURCE CODE</h2>
+<pre><code>#include&lt;iostream&gt;
+using namespace std;
+
+//This program prints &quot;Hello World!&quot;
+int main()
+{
+    cout &lt;&lt; &quot;Hello World!\n&quot;;
+
+    return 0;
+}
+</code></pre>
+<h2>CODE OVERVIEW</h2>
+<p>This program will gives as output the phrase &quot;Hello World!&quot;. Here the various parts of this program will be explained.</p>
+<h3>Libraries</h3>
+<p>At the beginning of a C++ program, you start by including libraries and header files. This is done by writing a hashtag and then the name of the standard library surrounded by a less than and an equal sign or speech marks if it is a header file. In the Hello World program include the library iostream allows us to use cout later on, a command that would otherwise have been unavailable to us.</p>
+<pre><code>#include&lt;iostream&gt;
+#include&quot;std_lib_facilities.h&quot;
+</code></pre>
+<h3>Namespaces</h3>
+<p>After including any libraries you might need, you may want to set a default namespace. When typing in a command, you will have to type which namespace it belongs to.  cout is part of the standard namespace (referred to as std) so you would write <code>std::cout</code>. To save time when typing you can type <code>using namespace std;</code> which will mean that std will be assumed unless another namespace is specified. Namespaces allow you to include non standard libraries without worrying about different functions from different libraries having the same names.</p>
+<pre><code>using namespace std;
+</code></pre>
+<h3>Comments</h3>
+<p>Comments are pieces of text that are ignored by the compiler. These allow programmers to leave notes in the code, both for themselves and for other programmers. These are incredibly useful as they allow you to clearly label the purpose of all your code which is particularly useful for large bits of code and make it much easier to quickly find what you need. There are two ways to write comments. The first is by typing // at the beginning of a line, as in the example you can see in the Hello World program. If you want to have a multiline comment however, you can start by typing /* and end it by typing */.</p>
+<pre><code>//This program prints &quot;Hello World&quot;
+/* This comment
+   extends across
+   multiple lines */
+</code></pre>
+<h3>Functions</h3>
+<p>A function starts with an output type, then a name followed by two brackets specifying any required input. After that the contents of the function are contained within curly brackets. At the end of the contents of the function, the command return is given followed by whatever the output should be.</p>
+<p>Here the only function specified is the main function. This function is called by the program start and is where the your main code should be present. At the end of the main function you should type <code>return 0</code>. This may seem odd as the program will run fine whether you write <code>return 0</code> or not but the zero allows some systems to see that the program managed to run all the way to the end.</p>
+<pre><code>int main()
+{
+    return 0;
+}
+</code></pre>
+<h3>cout</h3>
+<p>cout is short for &quot;character out&quot; and represents the standard output stream. When you type cout you follow it with &lt;&lt; and then with the content to be sent to the standard output stream. If this content isn't a variable and you want to send some text as shown in the Hello World program, then you surround it with quotes. These quotes are not included in the output stream. The \n at the end refers to a newline.</p>
+<pre><code>cout &lt;&lt; &quot;Hello World!\n&quot;;
+</code></pre>
+<hr />
+<p><a href="Notes_01-Foundations.html">Previous</a> <a href="programmierung_1.html">Contents</a> <a href="http://www.placeholder.com">Next</a></p>
