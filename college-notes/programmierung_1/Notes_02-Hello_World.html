@@ -17,7 +17,7 @@ int main()
 <h3>Libraries</h3>
 <p>At the beginning of a C++ program, you start by including libraries and header files. This is done by writing a hashtag and then the name of the standard library surrounded by a less than and an equal sign or speech marks if it is a header file. In the Hello World program include the library iostream allows us to use cout later on, a command that would otherwise have been unavailable to us.</p>
 <pre><code>#include&lt;iostream&gt;
-#include&quot;std_lib_facilities.h&quot;
+#include&quot;std\_lib\_facilities.h&quot;
 </code></pre>
 <h3>Namespaces</h3>
 <p>After including any libraries you might need, you may want to set a default namespace. When typing in a command, you will have to type which namespace it belongs to.  cout is part of the standard namespace (referred to as std) so you would write <code>std::cout</code>. To save time when typing you can type <code>using namespace std;</code> which will mean that std will be assumed unless another namespace is specified. Namespaces allow you to include non standard libraries without worrying about different functions from different libraries having the same names.</p>
@@ -50,7 +50,7 @@ using namespace std;int main() {cout &lt;&lt;
 </code></pre>
 <h2>COMPILING C++</h2>
 <p>Before you can use your C++ program, you need to compile it. This is fairly simply done on the Mac and Linux command lines with the following command:</p>
-<pre><code>g++ hello_world.cpp -o hello_world
+<pre><code>g++ hello\_world.cpp -o hello\_world
 </code></pre>
 <p>Here the file name ending in .cpp is the source code to be converted into machine-readable code, and the file name typed after the -o flag is the name the compiled program will be given.</p>
 <p>An important thing to note here are the naming conventions used with the various files.</p>
@@ -72,15 +72,15 @@ hello_world - An executable file</p>
 <p><em>Run time errors</em> are the most complicated. These are often the hardest to find as the compiler can't warn you. This is usually because there is a problem in the logic of the code, so even though the code is syntactically correct, the results are not what you wanted. Another common source of run time errors come through unforeseen circumstances such as incorrect user input. Defensive programming can often be a good way to avoid these errors from the get go.</p>
 <p>Don't forget to test your programs thoroughly!!!</p>
 <h2>REVISION</h2>
-<p><strong>Include libraries</strong> - #include &lt;iostream&gt; / using namespace std;<br />
-<strong>Comments</strong> - for documentation /* */ //<br />
-<strong>Function</strong> - int main();<br />
-<strong>main()</strong> - Called at the launch of the program<br />
-<strong>Translate and Link</strong> - g++ x.cpp -o x<br />
-<strong>Start Program</strong> - ./x<br />
-<strong>Naming Conventions</strong> - x.cpp x.h x.o x<br />
-<strong>Error Categories</strong> - compile time, link time, run time<br />
-<strong>Testing</strong> - No proof of correctness but indispensible<br />
-<strong>Style matters</strong> - Readability and maintainability</p>
+<p><strong>Include libraries</strong> - #include &lt;iostream&gt; / using namespace std;</p>
+<p><strong>Comments</strong> - for documentation /* */ //</p>
+<p><strong>Function</strong> - int main();</p>
+<p><strong>main()</strong> - Called at the launch of the program</p>
+<p><strong>Translate and Link</strong> - g++ x.cpp -o x</p>
+<p><strong>Start Program</strong> - ./x</p>
+<p><strong>Naming Conventions</strong> - x.cpp x.h x.o x</p>
+<p><strong>Error Categories</strong> - compile time, link time, run time</p>
+<p><strong>Testing</strong> - No proof of correctness but indispensible</p>
+<p><strong>Style matters</strong> - Readability and maintainability</p>
 <hr />
-<p><a href="Notes_01-Foundations.html">Previous</a> <a href="programmierung_1.html">Contents</a> <a href="http://www.placeholder.com">Next</a></p>
+<p><a href="Notes_01-Foundations.html">Previous</a> <a href="programmierung_1.html">Contents</a> <a href="Notes_03-Data_Types_Variables_and_Expressions.html">Next</a></p>
